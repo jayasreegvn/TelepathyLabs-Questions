@@ -28,7 +28,7 @@ public class PlanFinder {
 
     private static List<Plan> readPlans(String filename) throws IOException {
         List<Plan> plans = new ArrayList<Plan>();
-        try (BufferedReader br = new BufferedReader(new FileReader( "D://CodingworkArea//SamplePlanSelection.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader( filename))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] parts = line.trim().split(",");
